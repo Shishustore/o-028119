@@ -1,3 +1,4 @@
+
 import Navbar from "../components/Navbar";
 import CategoryNav from "../components/CategoryNav";
 import ProductCard from "../components/ProductCard";
@@ -11,33 +12,33 @@ const Index = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-light-cream">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 bg-white">
+      <section className="pt-32 pb-16 px-4 bg-light-cream">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
           <div className="lg:w-1/2 animate-fade-up">
-            <p className="text-accent text-lg mb-4">
-              In this season, find the best 🔥
+            <p className="text-cool-black text-lg mb-4">
+              Quality clothing for your little ones 👶
             </p>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-8 text-primary">
-              Exclusive collection for everyone
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-8 text-primary-orange">
+              Premium kids clothing for newborn to 8 years
             </h1>
             <button 
               onClick={() => navigate('/marketplace')}
-              className="bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors flex items-center gap-2"
+              className="bg-primary-orange text-bright-white px-8 py-3 rounded-full hover:bg-primary-yellow hover:text-cool-black transition-colors flex items-center gap-2"
             >
-              Explore now
+              Shop Now
               <span className="inline-block">→</span>
             </button>
           </div>
           <div className="lg:w-1/2 mt-8 lg:mt-0 relative">
-            <div className="absolute -z-10 top-0 right-0 w-64 h-64 bg-[#ffd700] rounded-full opacity-50 blur-3xl"></div>
-            <div className="absolute -z-10 bottom-0 right-20 w-48 h-48 bg-[#ff69b4] rounded-full opacity-30 blur-3xl"></div>
+            <div className="absolute -z-10 top-0 right-0 w-64 h-64 bg-primary-yellow rounded-full opacity-50 blur-3xl"></div>
+            <div className="absolute -z-10 bottom-0 right-20 w-48 h-48 bg-primary-orange rounded-full opacity-30 blur-3xl"></div>
             <img
-              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
-              alt="Hero"
+              src="https://images.unsplash.com/photo-1522771930-78848d9293e8"
+              alt="Happy children in beautiful clothes"
               className="rounded-2xl shadow-lg relative z-10"
             />
           </div>
@@ -47,33 +48,33 @@ const Index = () => {
       {/* New Arrivals Section */}
       <section className="py-16">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 px-4">New Arrivals</h2>
+          <h2 className="text-3xl font-bold mb-8 px-4 text-primary-orange">New Arrivals</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
             <ProductCard
-              name="MacBook Pro"
-              price="$1,299"
-              image="https://images.unsplash.com/photo-1483058712412-4245e9b90334"
+              name="Cute Baby Onesie"
+              price="৳450"
+              image="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4"
               rating={5}
               reviews={12}
             />
             <ProductCard
-              name="iPhone 13"
-              price="$799"
-              image="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9"
+              name="Toddler Dress Set"
+              price="৳850"
+              image="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea"
               rating={4}
               reviews={8}
             />
             <ProductCard
-              name="iPad Pro"
-              price="$999"
-              image="https://images.unsplash.com/photo-1485827404703-89b55fcc595e"
+              name="Kids Summer Outfit"
+              price="৳650"
+              image="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9"
               rating={5}
               reviews={15}
             />
             <ProductCard
-              name="AirPods Pro"
-              price="$249"
-              image="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+              name="Baby Boy Romper"
+              price="৳380"
+              image="https://images.unsplash.com/photo-1544963503-4d9e6f608c10"
               rating={4}
               reviews={10}
             />
@@ -82,38 +83,38 @@ const Index = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-16 px-4 bg-[#F8F8F8]">
+      <section className="py-16 px-4 bg-bright-white">
         <div className="container mx-auto max-w-6xl flex flex-col lg:flex-row items-center gap-8">
           <div className="lg:w-1/2 space-y-6">
-            <h2 className="text-4xl font-bold">Don't miss out on special offers</h2>
-            <p className="text-accent">Register to receive news about the latest, savings combos, discount codes...</p>
+            <h2 className="text-4xl font-bold text-primary-orange">Stay updated with new collections</h2>
+            <p className="text-cool-black">Get notified about the latest arrivals, seasonal collections, and special offers for your little ones...</p>
             
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <span className="w-6 h-6 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center text-sm">01</span>
-                <span>Savings combos</span>
+                <span className="w-6 h-6 rounded-full bg-primary-yellow text-cool-black flex items-center justify-center text-sm font-semibold">01</span>
+                <span>New seasonal collections</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm">02</span>
-                <span>Freeship</span>
+                <span className="w-6 h-6 rounded-full bg-primary-orange text-bright-white flex items-center justify-center text-sm font-semibold">02</span>
+                <span>Free shipping offers</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="w-6 h-6 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center text-sm">03</span>
-                <span>Premium magazines</span>
+                <span className="w-6 h-6 rounded-full bg-primary-yellow text-cool-black flex items-center justify-center text-sm font-semibold">03</span>
+                <span>Size & care guides</span>
               </div>
             </div>
 
             <div className="flex gap-2 max-w-md">
-              <Input placeholder="Enter your email" className="flex-1" />
-              <Button className="bg-primary">
+              <Input placeholder="Enter your email" className="flex-1 border-primary-orange focus:ring-primary-orange" />
+              <Button className="bg-primary-orange hover:bg-primary-yellow hover:text-cool-black">
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </div>
           </div>
           <div className="lg:w-1/2">
             <img 
-              src="https://images.unsplash.com/photo-1595665593673-bf1ad72905c0?q=80&w=1000&auto=format&fit=crop"
-              alt="Newsletter"
+              src="https://images.unsplash.com/photo-1560460501-d4b9926e0fb8"
+              alt="Children wearing beautiful clothes"
               className="rounded-lg object-cover w-full h-[400px]"
             />
           </div>
@@ -125,39 +126,39 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center space-y-4">
-              <div className="bg-purple-50 w-20 h-20 mx-auto rounded-lg flex items-center justify-center">
-                <ChevronDown className="w-10 h-10 text-purple-600" />
+              <div className="bg-primary-yellow w-20 h-20 mx-auto rounded-lg flex items-center justify-center">
+                <ChevronDown className="w-10 h-10 text-cool-black" />
               </div>
-              <p className="text-sm text-purple-600">Step 1</p>
-              <h3 className="font-semibold text-lg">Filter & Discover</h3>
-              <p className="text-accent text-sm">Smart filtering and suggestions make it easy to find</p>
+              <p className="text-sm text-primary-orange font-semibold">Step 1</p>
+              <h3 className="font-semibold text-lg text-primary-orange">Browse by Age</h3>
+              <p className="text-cool-black text-sm">Find perfect fits for your child's age group and size</p>
             </div>
             
             <div className="text-center space-y-4">
-              <div className="bg-blue-50 w-20 h-20 mx-auto rounded-lg flex items-center justify-center">
-                <Plus className="w-10 h-10 text-blue-600" />
+              <div className="bg-primary-orange w-20 h-20 mx-auto rounded-lg flex items-center justify-center">
+                <Plus className="w-10 h-10 text-bright-white" />
               </div>
-              <p className="text-sm text-blue-600">Step 2</p>
-              <h3 className="font-semibold text-lg">Add to bag</h3>
-              <p className="text-accent text-sm">Easily select the correct items and add them to the cart</p>
+              <p className="text-sm text-primary-orange font-semibold">Step 2</p>
+              <h3 className="font-semibold text-lg text-primary-orange">Add to Cart</h3>
+              <p className="text-cool-black text-sm">Select size, quantity and add your favorite items to cart</p>
             </div>
 
             <div className="text-center space-y-4">
-              <div className="bg-yellow-50 w-20 h-20 mx-auto rounded-lg flex items-center justify-center">
-                <ChevronUp className="w-10 h-10 text-yellow-600" />
+              <div className="bg-primary-yellow w-20 h-20 mx-auto rounded-lg flex items-center justify-center">
+                <ChevronUp className="w-10 h-10 text-cool-black" />
               </div>
-              <p className="text-sm text-yellow-600">Step 3</p>
-              <h3 className="font-semibold text-lg">Fast shipping</h3>
-              <p className="text-accent text-sm">The carrier will confirm and ship quickly to you</p>
+              <p className="text-sm text-primary-orange font-semibold">Step 3</p>
+              <h3 className="font-semibold text-lg text-primary-orange">Fast Delivery</h3>
+              <p className="text-cool-black text-sm">Quick and safe delivery right to your doorstep</p>
             </div>
 
             <div className="text-center space-y-4">
-              <div className="bg-pink-50 w-20 h-20 mx-auto rounded-lg flex items-center justify-center">
-                <Check className="w-10 h-10 text-pink-600" />
+              <div className="bg-primary-orange w-20 h-20 mx-auto rounded-lg flex items-center justify-center">
+                <Check className="w-10 h-10 text-bright-white" />
               </div>
-              <p className="text-sm text-pink-600">Step 4</p>
-              <h3 className="font-semibold text-lg">Enjoy the product</h3>
-              <p className="text-accent text-sm">Have fun and enjoy your 5-star quality products</p>
+              <p className="text-sm text-primary-orange font-semibold">Step 4</p>
+              <h3 className="font-semibold text-lg text-primary-orange">Happy Kids</h3>
+              <p className="text-cool-black text-sm">Watch your little ones shine in premium quality clothes</p>
             </div>
           </div>
         </div>

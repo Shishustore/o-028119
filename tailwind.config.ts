@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -28,24 +29,28 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#141413",
-          foreground: "#FAFAF8",
+          DEFAULT: "#F58634", // Primary Orange
+          foreground: "#FFFFFF", // Bright White
         },
         secondary: {
-          DEFAULT: "#E6E4DD",
-          foreground: "#141413",
+          DEFAULT: "#FFC94B", // Primary Yellow
+          foreground: "#222222", // Cool Black
         },
         accent: {
-          DEFAULT: "#828179",
-          foreground: "#FAFAF8",
+          DEFAULT: "#222222", // Cool Black for text
+          foreground: "#FFFFFF", // Bright White
         },
         muted: {
-          DEFAULT: "#F0EFEA",
-          foreground: "#828179",
+          DEFAULT: "#FFF9E6", // Light Cream
+          foreground: "#222222", // Cool Black
         },
-        subtle: "#C4C3BB",
-        card: "#FAFAF8",
-        mint: "#e6ffe6",
+        subtle: "#FFF9E6",
+        card: "#FFFFFF", // Bright White for cards
+        "light-cream": "#FFF9E6",
+        "primary-orange": "#F58634",
+        "primary-yellow": "#FFC94B",
+        "cool-black": "#222222",
+        "bright-white": "#FFFFFF",
       },
       borderRadius: {
         lg: "var(--radius)",

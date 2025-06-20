@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Baby Onesie",
+    "category": "Baby",
+    "thumbnail": "/images/products/baby-onesie.jpg",
+    "rating": 5,
+    "reviews": 10,
+    "variants": [
+      { "size": "3-6m", "price": "\u09f3450" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Toddler Dress",
+    "category": "Toddler",
+    "thumbnail": "/images/products/toddler-dress.jpg",
+    "rating": 4,
+    "reviews": 8,
+    "variants": [
+      { "size": "2-3y", "price": "\u09f3850" }
+    ]
+  }
+]

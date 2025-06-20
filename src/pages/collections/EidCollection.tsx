@@ -4,7 +4,7 @@ import ProductCard from '@/components/ProductCard';
 import productsData from '@/data/products.json';
 
 const EidCollectionPage = () => {
-  // Example: Filter for products tagged for Eid
+  // Temporary: use "Baby" category products until Eid-specific tags are added
   const eidProducts = productsData.filter(p => p.category === 'Baby');
 
   return (
